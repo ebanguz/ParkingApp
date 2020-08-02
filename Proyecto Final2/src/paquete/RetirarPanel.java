@@ -125,7 +125,7 @@ public class RetirarPanel extends JPanel implements Vehiculo {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			java.sql.Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/ITLA",
-					"root", "BreakingBad3");
+					"root", "");
 
 			java.sql.Statement stat = conexion.createStatement();
 
@@ -170,7 +170,7 @@ public class RetirarPanel extends JPanel implements Vehiculo {
 
 					Class.forName("com.mysql.cj.jdbc.Driver");
 					java.sql.Connection conexion2 = DriverManager
-							.getConnection("jdbc:mysql://localhost:3306/ITLA", "root", "BreakingBad3");
+							.getConnection("jdbc:mysql://localhost:3306/ITLA", "root", "");
 					java.sql.Statement statement = conexion2.createStatement();
 					ResultSet resultSet = statement
 							.executeQuery("SELECT * FROM vehiculos WHERE placa='" + txtPlacaR.getText() + "'");
