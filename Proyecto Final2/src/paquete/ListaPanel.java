@@ -110,7 +110,7 @@ public class ListaPanel extends JPanel implements Vehiculo {
 
 					Class.forName("com.mysql.cj.jdbc.Driver");
 					java.sql.Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/ITLA",
-							"root", "BreakingBad3");
+							"root", "");
 					java.sql.Statement statement = conexion.createStatement();
 
 					String consulta = "SELECT * FROM vehiculos WHERE placa LIKE '%" + txtPlaca.getText()
