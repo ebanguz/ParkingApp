@@ -178,7 +178,7 @@ public class IngresarPanel extends JPanel implements Vehiculo {
 
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			java.sql.Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/ITLA",
-					"root", "BreakingBad3");
+					"root", "");
 			DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 			Calendar cal = Calendar.getInstance();
 
